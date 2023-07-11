@@ -1,0 +1,14 @@
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kuiviewer_part" version="6" translationDomain="kuiviewer">
+<MenuBar>
+ <Menu name="edit"><Text>&amp;Edit</Text>
+  <Action name="edit_copy"/>
+ </Menu>
+ <Menu name="view"><Text>&amp;View</Text>
+  <Action name="change_style"/>
+ </Menu>
+</MenuBar>
+<ToolBar name="styleBar"><Text>Style</Text>
+  <Action name="change_style"/>
+</ToolBar>
+</gui>

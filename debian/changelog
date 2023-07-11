@@ -1,5 +1,279 @@
-template-repository (1.0-1) unstable; urgency=medium
+kde-dev-utils (4:22.12.3-1) unstable; urgency=medium
 
-  * Initial release
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.3).
+  * Update build-deps and deps with the info from cmake.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 01 Mar 2023 11:57:49 +0100
+
+kde-dev-utils (4:22.12.1-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.1).
+  * Bump Standards-Version to 4.6.2, no change required.
+  * Add Albert Astals Cid’s master key to upstream signing keys.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 06 Jan 2023 23:05:13 +0100
+
+kde-dev-utils (4:22.12.0-2) unstable; urgency=medium
+
+  * Upload with a correctly released changelog.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Dec 2022 16:04:35 +0100
+
+kde-dev-utils (4:22.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.08.3).
+  * Bump Standards-Version to 4.6.1, no change required.
+  * New upstream release (22.11.90).
+  * New upstream release (22.12.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Dec 2022 00:12:53 +0100
+
+kde-dev-utils (4:21.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (21.12.3).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 06 Mar 2022 22:36:05 +0100
+
+kde-dev-utils (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:08:58 +0900
+
+kde-dev-utils (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 28 Apr 2021 10:02:32 +0900
+
+kde-dev-utils (4:20.12.0-1) unstable; urgency=medium
+
+  * New upstream release (20.12.0).
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Bump debhelper compatibility level to 13.
+  * Refresh upstream metadata.
+  * Update project homepage.
+  * Borrow minimal upstream signing key from k3b.
+  * Build with hardening=+all build hardening flag.
+  * Drop kde-l10n migration rules, not needed anymore after 2 stable releases.
+  * Remove Modestas Vainius, George Kiagiadakis, Maximiliano Curia from the
+    uploaders, thanks for your work on the package!
+  * Add myself to the uploaders.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 20 Dec 2020 07:54:54 +0100
+
+kde-dev-utils (4:20.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.0
+    - bump Qt packages to 5.9.0
+    - bump KF packages to 5.53.0
+    - remove the unused libkf5jobwidgets-dev
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Add the configuration for the CI on salsa.
+  * Update install files.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 01 Aug 2020 14:14:55 +0200
+
+kde-dev-utils (4:18.08.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release:
+    - builds fine again (Closes: #907962)
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Bump the extra-cmake-modules build dependency to >= 5.14.0, according to
+    the upstream build system.
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+  * Small touches to copyright file.
+  * Bump Standards-Version to 4.2.1, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 07 Sep 2018 06:54:05 +0200
+
+kde-dev-utils (4:17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Remove the unused python build dependency.
+  * Bump Standards-Version to 4.1.3, no changes required.
+  * Switch the qt5-designer suggest in kuiviewer to qttools5-dev-tools, which
+    is the actual package containing Qt Designer
+    - adapt the description as well
+
+ -- Pino Toscano <pino@debian.org>  Sat, 20 Jan 2018 10:08:02 +0100
+
+kde-dev-utils (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+  [ Maximiliano Curia ]
+  * Bump kde-l10n breaks/replaces versions
+  * Update uploaders list as requested by MIA team (Closes: #879324)
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Simplify watch file, and switch it to https.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will drop
+    translations.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 20 Nov 2017 21:17:00 +0100
+
+kde-dev-utils (4:17.08.1-1) experimental; urgency=medium
+
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 13 Sep 2017 15:44:09 +0200
+
+kde-dev-utils (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 13:58:54 +0000
+
+kde-dev-utils (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:33:30 +0000
+
+kde-dev-utils (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:15:10 +0000
+
+kde-dev-utils (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:20:59 +0000
+
+kde-dev-utils (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:14:50 +0000
+
+kde-dev-utils (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:03:31 +0000
+
+kde-dev-utils (4:16.08.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 27 Aug 2016 15:47:38 +0200
+
+kde-dev-utils (4:15.12.2-2) unstable; urgency=medium
+
+  [ Rohan Garg ]
+  * New upstream release
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+
+  [ Maximiliano Curia ]
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 16:50:41 +0200
+
+kde-dev-utils (4:14.12.2-1) experimental; urgency=medium
+
+  * Prepare Debian release.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 17 Feb 2015 15:46:01 +0100
+
+kde-dev-utils (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 09:26:54 -0800
+
+kde-dev-utils (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove kdelibs5-dev depend version as there was not a new release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 17:03:09 +0100
+
+kde-dev-utils (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  [ Philip Muškovac ]
+  * New upstream release candidate
+  * Fix watch urls for new release location
+  * Update Vcs urls for the new repository location
+  * Update the maintainer
+
+  [ Jonathan Riddell ]
+  * PPA build
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 03 Dec 2014 14:59:30 +0100
+
+kde-dev-utils (4:4.12.2-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:25:28 +0200
+
+kde-dev-utils (4:4.12.2-1) experimental; urgency=medium
+
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:32 +0100
+
+kde-dev-utils (4:4.11.3-2) unstable; urgency=low
+
+  * Team upload.
+  * Re-enable kmtrace:
+    - add kmtrace in control
+    - add the libiberty-dev | binutils-dev build dependency
+    - provide kmtrace.install and kmtrace.lintian-overrides
+
+ -- Pino Toscano <pino@debian.org>  Sat, 30 Nov 2013 14:53:50 +0100
+
+kde-dev-utils (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 14:26:06 +0100
+
+kde-dev-utils (4:4.11.2-1) experimental; urgency=low
+
+  * First release of kdesdk after being split by upstream.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Oct 2013 10:59:37 +0200

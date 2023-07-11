@@ -1,15 +1,53 @@
-Source: template-repository
-Section: unknown
+Source: kde-dev-utils
+Section: kde
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.85.0~),
+               gettext,
+               libkf5coreaddons-dev (>= 5.85.0~),
+               libkf5i18n-dev (>= 5.85.0~),
+               libkf5kio-dev (>= 5.85.0~),
+               libkf5parts-dev (>= 5.85.0~),
+               libkf5widgetsaddons-dev (>= 5.85.0~),
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.15.0~),
+               qttools5-dev (>= 5.15.0~),
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Homepage: https://invent.kde.org/sdk/kde-dev-utils
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kde-dev-utils
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kde-dev-utils.git
 
-Package: template-repository
+Package: kpartloader
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: test tool for KParts
+ KPartloader is a very simple application to test loading of a KPart.
+ KPartloader is called with a simple argument to tell which KPart to load.
+ .
+ KParts is a KDE core technology to embed components of one application into
+ other applications. This application is used for testing such components
+ during development.
+ .
+ This package is part of the KDE Software Development Kit module.
+
+Package: kuiviewer
+Architecture: any
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Suggests: qttools5-dev-tools,
+Description: viewer for Qt Designer user interface files
+ KUIViewer is a utility to display and check user interface (.ui) files
+ created in Qt Designer.  The interfaces can be shown in a variety of
+ different widget styles to ensure that they display correctly in any
+ environment.
+ .
+ The Qt Designer itself is in the package qttools5-dev-tools.
+ .
+ This package is part of the KDE Software Development Kit module.

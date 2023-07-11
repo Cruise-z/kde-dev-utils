@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="addon">
+  <id>org.kde.kuiviewerpart</id>
+  <!--
+    Appstream model currently does not support the idea of generic addons
+    See https://github.com/ximion/appstream/issues/157
+    As intermediate work-around some typical consumers are listed explicitely.
+  -->
+  <extends>org.kde.ark.desktop</extends>
+  <extends>org.kde.kate.desktop</extends>
+  <extends>org.kde.kdevelop.desktop</extends>
+  <extends>org.kde.krusader.desktop</extends>
+  <extends>org.kde.konqueror.desktop</extends>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-2.0</project_license>
+  <name>KUIViewer KPart</name>
+  <name xml:lang="az">KUIViewer KPart</name>
+  <name xml:lang="bg">KUIViewer KPart</name>
+  <name xml:lang="ca">KPart del KUiViewer</name>
+  <name xml:lang="ca-valencia">KPart del KUiViewer</name>
+  <name xml:lang="cs">KPart pro KUIViewer</name>
+  <name xml:lang="de">KUIViewer-KPart</name>
+  <name xml:lang="el">KUIViewer KPart</name>
+  <name xml:lang="en-GB">KUIViewer KPart</name>
+  <name xml:lang="es">KUIViewer KPart</name>
+  <name xml:lang="et">KUIVieweri komponent</name>
+  <name xml:lang="eu">KUIViewer KPart</name>
+  <name xml:lang="fi">KUIViewer-osa</name>
+  <name xml:lang="fr">KPart KUIViewer</name>
+  <name xml:lang="gl">KPart de KUIViewer</name>
+  <name xml:lang="it">KPart di KUIViewer</name>
+  <name xml:lang="ka">KUIViewer KPart</name>
+  <name xml:lang="ko">KUiViewer KPart</name>
+  <name xml:lang="nl">KUIViewer KPart</name>
+  <name xml:lang="nn">KUIViewer-KPart</name>
+  <name xml:lang="pl">KUIViewer KPart</name>
+  <name xml:lang="pt">KPart do KUIViewer</name>
+  <name xml:lang="pt-BR">KUIViewer KPart</name>
+  <name xml:lang="sk">KUIViewer KPart</name>
+  <name xml:lang="sl">KUIViewer KPart</name>
+  <name xml:lang="sv">Kuiviewer delprogram</name>
+  <name xml:lang="tr">KUIViewer KPart</name>
+  <name xml:lang="uk">KPart KUIViewer</name>
+  <name xml:lang="x-test">xxKUIViewer KPartxx</name>
+  <name xml:lang="zh-CN">KUIViewer KPart</name>
+  <name xml:lang="zh-TW">KUIViewer KPart</name>
+  <summary>Qt Designer UI File Viewer in KParts-using software</summary>
+  <summary xml:lang="az">Qt Designer UI Faylına baxış vasitəsi KParts-ın istifadəsi ilə proqram təminatında</summary>
+  <summary xml:lang="bg">Преглед на файлове за потребителски интерфейс на Qt Designer в софтуер, използващ KParts.</summary>
+  <summary xml:lang="ca">Visualitzador de fitxers UI del Qt Designer en el programari que empra les KPart</summary>
+  <summary xml:lang="ca-valencia">Visor de fitxers UI de Qt Designer en el programari que utilitza KPart</summary>
+  <summary xml:lang="de">Betrachter für UI-Dateien des Qt-Designer in Anwendungen, die KParts verwenden</summary>
+  <summary xml:lang="el">Προβολέας αρχείων περιβάλλοντος χρήστη του Qt Designer σε λογισμικό που χρησιμοποιεί KParts</summary>
+  <summary xml:lang="en-GB">Qt Designer UI File Viewer in KParts-using software</summary>
+  <summary xml:lang="es">Visor de archivos de interfaz de usuario de Qt Designer para software que usa KParts</summary>
+  <summary xml:lang="et">Qt Designeri UI-failide näitaja KPartsi kasutavas tarkvaras</summary>
+  <summary xml:lang="eu">Qt Designer UI fitxategi ikusgailua KPart erabiltzen duen softwarean</summary>
+  <summary xml:lang="fi">Qt Designerin käyttöliittymätiedostokatselin KPartsia käyttäviin ohjelmiin</summary>
+  <summary xml:lang="fr">Afficheur de fichiers d'interface graphique « Qt Designer » dans les logiciels utilisant KParts</summary>
+  <summary xml:lang="gl">Visor de ficheiros UI de Qt Designer en programas que usen KParts</summary>
+  <summary xml:lang="it">Visore di file UI di Qt Designer nei programmi che utilizzano KPart</summary>
+  <summary xml:lang="ka">Qt Designer UI ფაილის ნახვა KParts-ის გამომყენებელ პროგრამებში</summary>
+  <summary xml:lang="ko">KParts를 사용하는 소프트웨어에서 사용할 수 있는 Qt Designer UI 파일 뷰어</summary>
+  <summary xml:lang="nl">Weergave van QT Designer UI-bestanden in software gebruikmakend van KParts</summary>
+  <summary xml:lang="nn">Visar for Qt Designer-UI-filer brukt i KParts-programvare</summary>
+  <summary xml:lang="pl">Przeglądarka plików interfejsu użytkownika w oprogramowaniu używającym KParts</summary>
+  <summary xml:lang="pt">Componente KPart de Visualização de Ficheiros UI do Qt Designer</summary>
+  <summary xml:lang="pt-BR">Visualizador de arquivos .ui do Qt Designer em softwares que usam o KPart</summary>
+  <summary xml:lang="sk">Prehliadač súborov Qt Designer UI v softvéri používajúcom KParts</summary>
+  <summary xml:lang="sl">Qt Designer UI File Viewer v programski opremi, ki uporablja KParts</summary>
+  <summary xml:lang="sv">Visning av Qt Designer användargränssnittsfiler i programvara som använder delprogram</summary>
+  <summary xml:lang="tr">KParts kullanan Qt Designer UI Dosyası Görüntüleyicisi</summary>
+  <summary xml:lang="uk">Переглядач UI-файлів Qt Designer для програм, у яких використано KPart</summary>
+  <summary xml:lang="x-test">xxQt Designer UI File Viewer in KParts-using softwarexx</summary>
+  <summary xml:lang="zh-CN">Qt Designer 用户界面文件查看器 KPart</summary>
+  <description>
+    <p>The KUIViewer KPart allows KParts-using software to display and check user interface (.ui) files created in Qt Designer.</p>
+    <p xml:lang="az">KUIViewer KPart, KParts-ın istifadə etdiyi proqram təminatına QT Designer proqramında yaradılmış istifadəçi interfeysi (.ui) fayllarını göstərməyə və onları yoxlamağa imkan verir.</p>
+    <p xml:lang="bg">KPart KUIViewer позволява на софтуер, използващ KParts, да показва и проверява файлове с потребителски интерфейс (.ui), създадени в Qt Designer.</p>
+    <p xml:lang="ca">La KPart del KUIViewer permet que el programari que empra les KPart mostri i verifiqui els fitxers d'interfície d'usuari (.ui) creats amb el Qt Designer.</p>
+    <p xml:lang="ca-valencia">KPart del KUIViewer permet que el programari que utilitza KPart mostre i verifique els fitxers d'interfície d'usuari (.ui) creats amb Qt Designer.</p>
+    <p xml:lang="de">Mit KUIViewer-KPart können Anwendungen, die KParts verwenden, Dateien mit Definitionen von Benutzeroberflächen (.ui-Dateien), die in Qt-Designer erstellt wurden, anzeigen und überprüfen.</p>
+    <p xml:lang="el">Το KUIViewer KPart επιτρέπει σε λογισμικό που χρησιμοποιεί KParts να εμφανίζει και να ελέγχει αρχεία περιβάλλοντος χρήστη (.ui) που δημιουργεί το Qt Designer.</p>
+    <p xml:lang="en-GB">The KUIViewer KPart allows KParts-using software to display and check user interface (.ui) files created in Qt Designer.</p>
+    <p xml:lang="es">KUIViewer KPart permite al software que usa KParts mostrar y probar archivos de interfaz de usuario (.ui) creados con Qt Designer.</p>
+    <p xml:lang="et">KUIVieweri komponent võimaldab tarkvaral, mis kasutab KPartsi, näidata ja kontrollida Qt Designeriga loodud kasutajaliidesefaile (.ui-faile).</p>
+    <p xml:lang="eu">KUIViewer KPart-ek, KPart erabiltzen duten softwareei «Qt Designer»rekin sortutako erabiltzaile-interfazeak (.ui) erakutsi eta aztertzen uzten die.</p>
+    <p xml:lang="fi">KUIViewer-osa sallii KPartsia käyttävien ohjelmien näyttää ja tarkistaa Qt Designerilla luotuja käyttöliittymätiedostoja (*.ui).</p>
+    <p xml:lang="fr">Le KPart KUIViewer permet aux logiciels utilisant les KParts d'afficher et de consulter les fichiers d'interface graphique (.ui) créés avec Qt Designer.</p>
+    <p xml:lang="gl">A KPart de KUIViewer permite a programas que usen KPart mostrar e comprobar ficheiros de interface de usuario (.ui) creados con Qt Designer.</p>
+    <p xml:lang="it">Il KPart di KUIViewer consente ai programmi che utilizzando KPart di visualizzare e controllare i file dell'interfaccia utente (.ui) creati in Qt Designer.</p>
+    <p xml:lang="ka">KUIVirewer KPart საშუალებას აძლევს პროგრამებს, რომლებიც KParts-ს იყენებენ, Qt Designer-ში შექმნილი მომხმარებლის ინტერფეისის ფალები (.ui) აჩვენონ და შეამოწმონ.</p>
+    <p xml:lang="ko">KUIViewer KPart는 KParts를 사용하는 프로그램에서 Qt Designer로 만든 사용자 인터페이스 파일(.ui)을 보고 검사하는 도구입니다.</p>
+    <p xml:lang="nl">De KUIViewer KParts biedt van KParts gebruik makende software om gebruikersinterfacebestanden (.ui), gemaakt in Qt Designer, deze te tonen en te controleren.</p>
+    <p xml:lang="nn">KUIViewer KPart lèt programvare som brukar KParts visa og sjekka brukarflate­filer (.ui) laga i Qt Designer.</p>
+    <p xml:lang="pl">KPart KUIViewera umożliwia oprogramowaniu używającemu KParts wyświetlenie i sprawdzenie plików interfejsu użytkownika (.ui), które zostały utworzone w Qt Designer.</p>
+    <p xml:lang="pt">O KPart do KUIViewer permite às aplicações que usam o KParts apresentar e verificar os ficheiros de interface de utilizador (.ui) criados no Qt Designer.</p>
+    <p xml:lang="pt-BR">O KUIViewer KPart permite aos softwares que usam o KParts mostrar e verificar os arquivos de interface do usuário (.ui) criados no Qt Designer.</p>
+    <p xml:lang="sk">KUIViewer KPart umožní softvéru používajúcemu KParts zobraziť a skontrolovať súbory používateľského rozhrania (.ui) vytvorené v programe Qt Designer.</p>
+    <p xml:lang="sl">KUIViewer KPart omogoča programski opremi, ki uporablja KParts, za prikaz in preverjanje datotek uporabniškega vmesnika (.ui), ustvarjenih v Qt Designerju.</p>
+    <p xml:lang="sv">Kuiviewer delprogram gör det möjligt för programvara som använder delprogram att visa och kontrollera användargränssnittfiler (.ui) skapade i Qt Designer.</p>
+    <p xml:lang="tr">KUIViewer KPart, KParts kullanan yazılımların Qt Designer ile oluşturulan kullanıcı arabirimi dosyalarını (.ui) görüntülemesine ve denetlemesine izin verir.</p>
+    <p xml:lang="uk">KPart KUIViewer надає змогу показувати та перевіряти у програмах з інтерфейсом KPart файли інтерфейсу користувача (.ui), які створено у Qt Designer.</p>
+    <p xml:lang="x-test">xxThe KUIViewer KPart allows KParts-using software to display and check user interface (.ui) files created in Qt Designer.xx</p>
+    <p xml:lang="zh-CN">KUIViewer KPart 让使用 KPart 的软件显示和检查 Qt Designer 创建的用户界面(.ui)文件。</p>
+  </description>
+  <url type="homepage">https://userbase.kde.org/KUIViewer</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kuiviewer</url>
+  <url type="help">https://userbase.kde.org/KUIViewer</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=kuiviewer</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/kuiviewer/kuiviewer.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <categories>
+    <category>Development</category>
+  </categories>
+  <icon type="stock">kuiviewer</icon>
+  <update_contact>kde-devel@kde.org</update_contact>
+  <releases>
+    <release version="22.12.3" date="2023-03-02"/>
+    <release version="22.12.2" date="2023-02-02"/>
+    <release version="22.12.1" date="2023-01-05"/>
+    <release version="22.12.0" date="2022-12-08"/>
+  </releases>
+</component>
